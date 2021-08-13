@@ -1,0 +1,33 @@
+.cart {
+  &__list {
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+      &__img {
+        height: 5rem;
+        width: 5rem;
+        margin-right: 1.5rem;
+      }
+
+      &__info {
+        flex-grow: 1;
+        color: var(--color-grey-dark-2);
+
+        &__title {
+          font-weight: 400;
+          font-size: 1.4rem;
+          text-transform: uppercase;
+        }
+
+        &__quantity {
+          font-size: 1.2rem;
+        }
+        &__price {
+          font-weight: 600;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

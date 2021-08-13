@@ -1,0 +1,24 @@
+.custom-button {
+  color: white;
+  margin: auto;
+  display: block;
+  text-transform: uppercase;
+
+  &--primary {
+    background-color: var(--color-secondary);
+  }
+
+  &--extra-large {
+    font-size: 2rem;
+    padding: 1rem 8rem;
+    font-weight: 600;
+  }
+
+  &--medium {
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 1rem 3rem;
+  }
+
+  margin-bottom: 2rem;
+}

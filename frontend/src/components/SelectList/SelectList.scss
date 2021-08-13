@@ -1,0 +1,49 @@
+.select-list {
+  padding: 1rem 2rem;
+
+  &__header {
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--color-grey-dark-2);
+    font-size: 1.8rem;
+    margin-bottom: 1.4rem;
+  }
+
+  &__item {
+    margin-bottom: 0.5rem;
+    &__checkbox {
+      display: none;
+    }
+    &__label {
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      color: var(--color-grey-dark-3);
+      text-transform: capitalize;
+
+      &:hover {
+        color: var(--color-grey-dark-2);
+      }
+      &__box {
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        border: 1px solid black;
+        margin-right: 1.5rem;
+        justify-content: center;
+        align-items: center;
+
+        &__icon {
+          display: none;
+          height: 1.5rem;
+          width: 1.5rem;
+        }
+      }
+    }
+
+    &__checkbox:checked + &__label &__label__box &__label__box__icon {
+      display: block;
+    }
+  }
+}

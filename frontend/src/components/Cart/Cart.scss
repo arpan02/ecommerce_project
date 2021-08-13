@@ -1,0 +1,13 @@
+.cart {
+  width: 30rem;
+  max-height: 35rem;
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  z-index: 500;
+  right: 0%;
+  border-radius: 5px;
+  box-shadow: 0 6px 4px rgba(0, 0, 0, 0.2);
+  padding: 2rem 2rem;
+  padding-right: 1rem;
+}

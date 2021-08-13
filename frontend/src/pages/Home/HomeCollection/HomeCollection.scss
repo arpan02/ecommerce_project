@@ -1,0 +1,203 @@
+.home-collection {
+  height: 60rem;
+  margin-bottom: 10rem;
+
+  @media only screen and (max-width: 900px) {
+    height: 300rem;
+  }
+
+  &__container {
+    height: 90%;
+    display: flex;
+    border: 1px solid var(--color-grey-light-4);
+    border-top: 3px solid var(--color-secondary);
+    padding: 0.5rem;
+  }
+
+  &__select {
+    height: 6rem;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    @media only screen and (max-width: 600px) {
+      display: flex !important;
+    }
+  }
+
+  &__header {
+    font-weight: 400;
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+    justify-content: center;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  &__side-menu {
+    width: 18%;
+
+    @media only screen and (max-width: 900px) {
+      display: none;
+    }
+
+    // @media only screen and (max-width: 600px) {
+    //   display: none;
+    // }
+    &__item {
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+      color: var(--color-grey-dark-3);
+      cursor: pointer;
+
+      &:hover {
+        color: var(--color-grey-dark-2);
+      }
+      &__icon {
+        fill: var(--color-secondary);
+        margin-right: 1rem;
+      }
+      &__name {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  &__poster {
+    width: 27%;
+    background-color: orange;
+    // background-image: url(../../../assets/images/brooke-cagle-emlKHDEydhg-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    filter: brightness(80%);
+    transition: all 0.5s;
+
+    @media only screen and (max-width: 900px) {
+      display: none;
+    }
+    &:hover {
+      filter: brightness(70%);
+    }
+
+    &__show-more {
+      font-size: 2.5rem;
+      background-color: var(--color-grey-dark-2);
+      color: var(--color-grey-light-1);
+      padding: 1rem 3rem;
+      position: absolute;
+      left: 50%;
+      top: 80%;
+      transform: translate(-50%, -50%);
+
+      &:hover {
+        background-color: var(--color-grey-dark-1);
+      }
+    }
+  }
+
+  &__gallery {
+    width: 55%;
+    padding: 1rem;
+
+    @media only screen and (max-width: 900px) {
+      width: 100%;
+    }
+
+    &__not-found {
+      font-size: 3rem;
+      font-weight: 300;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    &__container {
+      width: 100%;
+      height: 100%;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+      display: grid;
+      grid-gap: 1rem;
+      // @media only screen and (max-width: 900px) {
+      //   grid-template-rows: repeat(3, 1fr);
+      //   grid-template-columns: repeat(2, 1fr);
+      // }
+
+      @media only screen and (max-width: 900px) {
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(1, 50%);
+        justify-content: center;
+        grid-gap: 3rem;
+      }
+
+      @media only screen and (max-width: 600px) {
+        grid-template-columns: repeat(1, 70%);
+      }
+    }
+
+    &__item {
+      padding: 1rem;
+      min-width: 0;
+      min-height: 0;
+      border: 1px solid var(--color-grey-light-3);
+      &__img {
+        height: 60%;
+        width: 80%;
+        display: block;
+        margin: auto;
+      }
+
+      &__name {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        margin: 0.5rem;
+        color: var(--color-grey-dark-3);
+        height: 2rem;
+        overflow: hidden;
+      }
+
+      &__price {
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+        color: var(--color-secondary);
+      }
+
+      &__buttons {
+        display: flex;
+
+        &__cart,
+        &__wish-list {
+          margin: 0.5rem;
+          height: 3rem;
+          width: 3rem;
+          border-radius: 50%;
+          background-color: var(--color-grey-light-4);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &:hover {
+            background-color: var(--color-grey-dark-2);
+          }
+        }
+
+        &__cart {
+          background-color: var(--color-secondary);
+        }
+
+        &__icon {
+          width: 1.5rem;
+          height: 1.5rem;
+          fill: var(--color-grey-light-1);
+        }
+      }
+    }
+  }
+}

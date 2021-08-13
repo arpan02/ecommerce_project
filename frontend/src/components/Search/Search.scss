@@ -1,0 +1,36 @@
+.menu__top {
+  &__search {
+    width: 45%;
+    height: 3.5rem;
+    display: flex;
+    background-color: var(--color-primary);
+    margin-right: 12%;
+    position: relative;
+
+    &__input {
+      flex-grow: 2;
+      height: 100%;
+      border: none;
+      font-size: 1.6rem;
+      display: block;
+      padding: 0.3rem 1rem;
+
+      &:focus {
+        // background-color: var(--color-grey-light-1);
+        border: 1px solid var(--color-grey-dark-3);
+      }
+    }
+
+    &__button {
+      width: 10%;
+      height: 100%;
+      background: pink;
+      color: var(--color-grey-light-1);
+      background-color: var(--color-secondary);
+
+      &__icon {
+        fill: var(--color-grey-light-1);
+      }
+    }
+  }
+}

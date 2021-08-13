@@ -1,0 +1,149 @@
+.cart-page {
+  margin-bottom: 5rem;
+
+  &__header {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+
+  &__not-found {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+
+  &__container {
+    width: 80%;
+    min-height: 40rem;
+    margin: auto;
+
+    a {
+      display: block;
+      font-size: 1.8rem;
+      padding: 1rem;
+      background-color: var(--color-primary);
+      color: white;
+    }
+
+    @media only screen and (max-width: 900px) {
+      width: 100%;
+    }
+  }
+
+  &__total {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    text-align: right;
+  }
+
+  &__menu {
+    display: flex;
+    background-color: var(--color-grey-light-4);
+    padding: 1rem 0;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+
+    & > * {
+      width: 10%;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: black;
+      // height: 100%;
+      // padding-right: 2rem;
+    }
+
+    &__product-img {
+      @media only screen and (max-width: 600px) {
+        // width: 100%;
+        display: none;
+      }
+    }
+
+    &__product-name {
+      width: 30% !important;
+
+      @media only screen and (max-width: 900px) {
+        width: 40% !important;
+      }
+    }
+
+    &__quantity {
+      width: 20% !important ;
+    }
+  }
+
+  &__item {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 1px solid black;
+
+    & > * {
+      width: 10%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__img {
+      width: 5rem;
+      height: 5rem;
+      @media only screen and (max-width: 600px) {
+        display: none;
+      }
+    }
+
+    &__product-name {
+      width: 30% !important;
+
+      @media only screen and (max-width: 600px) {
+        width: 40% !important;
+      }
+    }
+
+    &__quantity {
+      width: 20% !important ;
+
+      div {
+        width: 80%;
+        height: 3.5rem;
+        background-color: var(--color-grey-light-4);
+        display: flex;
+        align-items: center;
+
+        span {
+          width: 20%;
+        }
+
+        button {
+          height: 100%;
+          display: inline-block;
+          width: 40%;
+          font-size: 1.8rem;
+          background-color: inherit;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  &__stripe-payment {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+}

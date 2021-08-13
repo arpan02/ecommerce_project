@@ -1,0 +1,52 @@
+.bottom-menu {
+  width: 73%;
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  height: 5rem;
+  align-self: flex-end;
+  border-radius: 6px;
+  // overflow: hidden;
+
+  @media only screen and (max-width: 900px) {
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  &__item {
+    font-size: 1.5rem;
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+    // justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: var(--color-grey-light-1);
+
+    &:hover {
+      color: var(--color-secondary);
+    }
+
+    &__icon {
+      fill: currentColor;
+      margin: 0 1rem;
+    }
+
+    &--cart {
+      background-color: var(--color-secondary);
+      padding: 1rem;
+      color: var(--color-grey-light-1);
+      font-weight: 600;
+
+      &:hover {
+        color: currentColor;
+        background-color: var(--color-secondary-dark);
+        // color: var(--color-light-2);
+      }
+    }
+  }
+}

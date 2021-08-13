@@ -1,0 +1,67 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__info {
+    width: 20%;
+  }
+
+  &__dot {
+    margin: 1rem;
+  }
+
+  &__container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__content {
+      margin: auto;
+    }
+  }
+
+  &__arrow {
+    background-color: transparent;
+
+    &__icon {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+
+  &__button {
+    background-color: transparent;
+    padding: 0.5rem;
+    margin: 1rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+    width: 2rem;
+
+    &:hover > * {
+      fill: var(--color-grey-dark-3);
+    }
+
+    &:hover {
+      color: var(--color-grey-dark-3);
+    }
+
+    &--selected {
+      border-bottom: 2px solid var(--color-grey-light-4);
+      color: var(--color-grey-light-4);
+    }
+  }
+
+  &__show-all {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin: 1rem;
+    cursor: pointer;
+    width: 20%;
+
+    &:hover {
+      color: var(--color-grey-dark-3);
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.home {
+  width: 90vw;
+  margin: auto;
+  &__container {
+    display: flex;
+    height: 50rem;
+    // width: 90vw;
+    // background-color: purple;
+    margin-bottom: 5rem;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (max-width: 600px) {
+      height: 40rem;
+    }
+  }
+}

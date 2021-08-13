@@ -1,0 +1,36 @@
+.product-menu {
+  display: flex;
+  background-color: var(--color-grey-light-4);
+  padding: 1rem 0;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  margin-bottom: 2rem;
+  & > * {
+    width: 10%;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: black;
+  }
+
+  &__product-img {
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  &__product-name {
+    width: 30% !important;
+    @media only screen and (max-width: 900px) {
+      width: 40% !important;
+    }
+  }
+
+  &__quantity {
+    width: 20% !important ;
+  }
+}
